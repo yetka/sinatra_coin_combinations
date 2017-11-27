@@ -8,6 +8,7 @@ class Coin
     @dimes = (@number%25)/10
     @nickels = ((@number%25)%10)/5
     @pennies = ((@number%25)%10)%5
+
     "It is equal to #{@quarters} quarters, #{@dimes} dimes, #{@nickels} nickels, #{@pennies} pennies."
   end
 end
