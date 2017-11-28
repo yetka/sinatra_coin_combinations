@@ -8,7 +8,7 @@ get('/') do
   erb(:input)
 end
 
-get('/output') do
+post('/output') do
   @amount = params.fetch("amount")
   new_coin = Coin.new(@amount)
   @result = new_coin.coin_combinations
